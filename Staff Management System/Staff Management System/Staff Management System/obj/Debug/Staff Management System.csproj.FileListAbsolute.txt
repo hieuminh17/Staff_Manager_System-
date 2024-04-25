@@ -1,0 +1,16 @@
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\bin\Debug\Staff Management System.exe.config
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\bin\Debug\Staff Management System.exe
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\bin\Debug\Staff Management System.pdb
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff Management System.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff_Management_System.Information.resources
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff_Management_System.Properties.Resources.resources
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff Management System.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff Management System.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff Management System.exe
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff Management System.pdb
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff_Management_System.Vacationday.resources
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff_Management_System.Average_benefits.resources
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff_Management_System.Hiring_Aniversary.resources
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff_Management_System.Accumulator_Days.resources
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff_Management_System.Benefits_Plan.resources
+C:\Users\PC\source\repos\Staff Management System\Staff Management System\obj\Debug\Staff_Management_System.Birthday.resources
