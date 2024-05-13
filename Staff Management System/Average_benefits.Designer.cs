@@ -31,7 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.txt_search = new System.Windows.Forms.TextBox();
+            this.txt_Search = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -71,14 +71,16 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txt_search
+            // txt_Search
             // 
-            this.txt_search.Location = new System.Drawing.Point(48, 194);
-            this.txt_search.Multiline = true;
-            this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(220, 47);
-            this.txt_search.TabIndex = 8;
+            this.txt_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Search.Location = new System.Drawing.Point(48, 194);
+            this.txt_Search.Multiline = true;
+            this.txt_Search.Name = "txt_Search";
+            this.txt_Search.Size = new System.Drawing.Size(220, 47);
+            this.txt_Search.TabIndex = 8;
             // 
             // label2
             // 
@@ -109,11 +111,12 @@
             this.ClientSize = new System.Drawing.Size(1682, 903);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txt_search);
+            this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Average_benefits";
             this.Text = "Average_benefits";
+            this.Load += new System.EventHandler(this.Average_benefits_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -126,7 +129,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txt_search;
+        private System.Windows.Forms.TextBox txt_Search;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

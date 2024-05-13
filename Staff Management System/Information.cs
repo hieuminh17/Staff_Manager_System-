@@ -105,5 +105,19 @@ namespace Staff_Management_System
             }
             else Application.OpenForms["Birthday"].Activate();
         }
+
+        private void btn_Total_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["Total_earning"] == null)
+            {
+                Total_earning v = new Total_earning();
+                v.MdiParent = this;
+                v.WindowState = FormWindowState.Maximized;
+                v.FormBorderStyle = FormBorderStyle.None; // or FormBorderStyle.FixedSingle
+                v.TopMost = true;
+                v.Show();
+            }
+            else Application.OpenForms["Total_earning"].Activate();
+        }
     }
 }

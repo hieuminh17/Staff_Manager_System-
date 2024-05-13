@@ -30,19 +30,19 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btn_dashboard = new System.Windows.Forms.Button();
             this.btn_Total = new System.Windows.Forms.Button();
             this.btn_vacation = new System.Windows.Forms.Button();
@@ -55,8 +55,8 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -88,6 +88,18 @@
             this.panel1.Size = new System.Drawing.Size(409, 238);
             this.panel1.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(403, 232);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Staff Manager System";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btn_dashboard);
@@ -95,13 +107,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(409, 85);
             this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(0, 115);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(409, 118);
-            this.panel3.TabIndex = 2;
             // 
             // panel4
             // 
@@ -112,13 +117,12 @@
             this.panel4.Size = new System.Drawing.Size(409, 78);
             this.panel4.TabIndex = 2;
             // 
-            // panel5
+            // panel3
             // 
-            this.panel5.Controls.Add(this.btn_average);
-            this.panel5.Location = new System.Drawing.Point(3, 506);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(409, 85);
-            this.panel5.TabIndex = 3;
+            this.panel3.Location = new System.Drawing.Point(0, 115);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(409, 118);
+            this.panel3.TabIndex = 2;
             // 
             // panel6
             // 
@@ -135,6 +139,14 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(409, 118);
             this.panel7.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btn_average);
+            this.panel5.Location = new System.Drawing.Point(3, 506);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(409, 85);
+            this.panel5.TabIndex = 3;
             // 
             // panel8
             // 
@@ -184,18 +196,6 @@
             this.panel13.Size = new System.Drawing.Size(409, 118);
             this.panel13.TabIndex = 2;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(403, 232);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Staff Manager System";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // btn_dashboard
             // 
             this.btn_dashboard.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -222,6 +222,7 @@
             this.btn_Total.TabIndex = 4;
             this.btn_Total.Text = "Total earnings";
             this.btn_Total.UseVisualStyleBackColor = true;
+            this.btn_Total.Click += new System.EventHandler(this.btn_Total_Click);
             // 
             // btn_vacation
             // 
@@ -321,8 +322,8 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel11.ResumeLayout(false);

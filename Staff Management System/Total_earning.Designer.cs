@@ -1,6 +1,7 @@
-﻿namespace Staff_Management_System
+﻿
+namespace Staff_Management_System
 {
-    partial class Accumulator_Days
+    partial class Total_earning
     {
         /// <summary>
         /// Required designer variable.
@@ -43,10 +44,10 @@
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Navy;
-            this.groupBox1.Location = new System.Drawing.Point(48, 270);
+            this.groupBox1.Location = new System.Drawing.Point(83, 251);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1552, 595);
-            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " Employee\'s Infomation List";
             // 
@@ -65,10 +66,10 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(293, 196);
+            this.button1.Location = new System.Drawing.Point(328, 177);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 47);
-            this.button1.TabIndex = 14;
+            this.button1.TabIndex = 19;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -76,21 +77,21 @@
             // txt_Search
             // 
             this.txt_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Search.Location = new System.Drawing.Point(48, 196);
+            this.txt_Search.Location = new System.Drawing.Point(83, 177);
             this.txt_Search.Multiline = true;
             this.txt_Search.Name = "txt_Search";
             this.txt_Search.Size = new System.Drawing.Size(220, 47);
-            this.txt_Search.TabIndex = 13;
+            this.txt_Search.TabIndex = 18;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(44, 158);
+            this.label2.Location = new System.Drawing.Point(79, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(254, 24);
-            this.label2.TabIndex = 12;
+            this.label2.TabIndex = 17;
             this.label2.Text = "Search Employee by ID or Name";
             // 
             // label1
@@ -98,13 +99,13 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(12, 76);
+            this.label1.Location = new System.Drawing.Point(47, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(398, 69);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Average benefits";
+            this.label1.Size = new System.Drawing.Size(321, 69);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Total Earning";
             // 
-            // Accumulator_Days
+            // Total_earning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -114,9 +115,9 @@
             this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Accumulator_Days";
-            this.Text = "Accumulator_Days";
-            this.Load += new System.EventHandler(this.Accumulator_Days_Load);
+            this.Name = "Total_earning";
+            this.Text = "Total_earning";
+            this.Load += new System.EventHandler(this.Total_earning_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -11,24 +11,24 @@ using System.Data.SqlClient;
 
 namespace Staff_Management_System
 {
-    public partial class Average_benefits : Form
+    public partial class Total_earning : Form
     {
         String conectString = @"Data Source=LAPTOP-KP432QPH\SQLEXPRESS02;Initial Catalog=HRM;Integrated Security=True";
         SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter adt;
         DataTable dt = new DataTable();
-        public Average_benefits()
+        public Total_earning()
         {
             InitializeComponent();
         }
 
-        private void Average_benefits_Load(object sender, EventArgs e)
+        private void Total_earning_Load(object sender, EventArgs e)
         {
             con = new SqlConnection(conectString);
             con.Open();
             //TRUY VAN CSDL
-            cmd = new SqlCommand("Select e.EMPLOYMENT_ID, emp.Last_Name as Name, p.SHAREHOLDER_STATUS, b.PLAN_NAME, b.DEDUCTABLE, b.PERCENTAGE_COPAY, emp.Paid_To_Date	 From PERSONAL p, BENEFIT_PLANS b, openquery(MySql, 'Select *from employee') emp, EMPLOYMENT e Where p.PERSONAL_ID = emp.idEmployee and p.PERSONAL_ID = e.PERSONAL_ID and b.BENEFIT_PLANS_ID = p.BENEFIT_PLAN_ID   ", con);
+            cmd = new SqlCommand("select emp.idEmployee,emp.Last_Name as Name,p.SHAREHOLDER_STATUS,p.CURRENT_GENDER,p.ETHNICITY,j.DEPARTMENT,emp.Paid_To_Date,emp.Paid_Last_Year from openquery(MySql, 'Select *from employee') emp, JOB_HISTORY j, EMPLOYMENT e, PERSONAL p where emp.idEmployee = p.PERSONAL_ID AND p.PERSONAL_ID = e.PERSONAL_ID and e.EMPLOYMENT_ID = j.EMPLOYMENT_ID ", con);
             adt = new SqlDataAdapter(cmd);
             adt.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -46,7 +46,7 @@ namespace Staff_Management_System
             con = new SqlConnection(conectString);
             con.Open();
             //TRUY VAN CSDL
-            cmd = new SqlCommand("Select e.EMPLOYMENT_ID, emp.Last_Name as Name, p.SHAREHOLDER_STATUS, b.PLAN_NAME, b.DEDUCTABLE, b.PERCENTAGE_COPAY, emp.Paid_To_Date	 From PERSONAL p, BENEFIT_PLANS b, openquery(MySql, 'Select *from employee') emp, EMPLOYMENT e Where p.PERSONAL_ID = emp.idEmployee and p.PERSONAL_ID = e.PERSONAL_ID and b.BENEFIT_PLANS_ID = p.BENEFIT_PLAN_ID  and e.EMPLOYMENT_ID=@Search ", con);
+            cmd = new SqlCommand("select emp.idEmployee,emp.Last_Name as Name,p.SHAREHOLDER_STATUS,p.CURRENT_GENDER,p.ETHNICITY,j.DEPARTMENT,emp.Paid_To_Date,emp.Paid_Last_Year from openquery(MySql, 'Select *from employee') emp, JOB_HISTORY j, EMPLOYMENT e, PERSONAL p where emp.idEmployee = p.PERSONAL_ID AND p.PERSONAL_ID = e.PERSONAL_ID and e.EMPLOYMENT_ID = j.EMPLOYMENT_ID and emp.idEmployee=@Search ", con);
             cmd.Parameters.AddWithValue("@Search", txt_Search.Text);
             adt = new SqlDataAdapter(cmd);
             adt.Fill(dt);
