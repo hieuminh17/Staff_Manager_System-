@@ -19,7 +19,17 @@ namespace Staff_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (Application.OpenForms["dash_boad"] == null)
+            {
 
+                dash_boad v = new dash_boad();
+                v.MdiParent = this;
+                v.WindowState = FormWindowState.Maximized;
+                v.FormBorderStyle = FormBorderStyle.None; // or FormBorderStyle.FixedSingle
+                v.TopMost = true;
+                v.Show();
+            }
+            else Application.OpenForms["dash_boad"].Activate();
         }
 
         private void btn_vacation_Click(object sender, EventArgs e)

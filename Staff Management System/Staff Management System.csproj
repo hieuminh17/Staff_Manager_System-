@@ -95,6 +95,12 @@
     <Compile Include="Accumulator_Days.Designer.cs">
       <DependentUpon>Accumulator_Days.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Employee.Designer.cs">
+      <DependentUpon>Add_Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Average_benefits.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,12 @@
     </Compile>
     <Compile Include="Birthday.Designer.cs">
       <DependentUpon>Birthday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dash_boad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dash_boad.Designer.cs">
+      <DependentUpon>dash_boad.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -131,6 +143,7 @@
     <Compile Include="Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
+    <Compile Include="LOPDUNGCHUNG.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +158,12 @@
     <Compile Include="Total_earning.Designer.cs">
       <DependentUpon>Total_earning.cs</DependentUpon>
     </Compile>
+    <Compile Include="update_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_Employee.Designer.cs">
+      <DependentUpon>update_Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vacationday.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +173,9 @@
     <EmbeddedResource Include="Accumulator_Days.resx">
       <DependentUpon>Accumulator_Days.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add_Employee.resx">
+      <DependentUpon>Add_Employee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Average_benefits.resx">
       <DependentUpon>Average_benefits.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Birthday.resx">
       <DependentUpon>Birthday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dash_boad.resx">
+      <DependentUpon>dash_boad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hiring_Aniversary.resx">
       <DependentUpon>Hiring_Aniversary.cs</DependentUpon>
@@ -181,6 +206,9 @@
     </Compile>
     <EmbeddedResource Include="Total_earning.resx">
       <DependentUpon>Total_earning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_Employee.resx">
+      <DependentUpon>update_Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vacationday.resx">
       <DependentUpon>Vacationday.cs</DependentUpon>

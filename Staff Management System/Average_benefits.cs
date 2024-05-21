@@ -12,7 +12,9 @@ using System.Data.SqlClient;
 namespace Staff_Management_System
 {
     public partial class Average_benefits : Form
+
     {
+        
         String conectString = @"Data Source=LAPTOP-KP432QPH\SQLEXPRESS02;Initial Catalog=HRM;Integrated Security=True";
         SqlConnection con;
         SqlCommand cmd;
